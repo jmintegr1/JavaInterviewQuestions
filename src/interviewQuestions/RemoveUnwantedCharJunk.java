@@ -5,7 +5,7 @@ public class RemoveUnwantedCharJunk {
 	public static void main(String[] args) {
 
 		String s = "!@#$%^&* latin string 1234567890";
-		String s1 = "@%#^ I love Selenium automation testing !!#$%%^ as much as I love  *$#() manual testing )()&^ cuz that makes comple SDET";
+		String s1 = "@%#^ I love Selenium automation testing !!#$%%^ as much as I love  *$#() manual testing )()&^ cuz that makes complete SDET";
 		
 		//Regular Expression: [^a-zA-Z0-9]
 		
