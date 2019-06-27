@@ -31,13 +31,8 @@ public class SmallestandLargestNumberArray {
 	System.out.println("\n Given array is: " + Arrays.toString(numbers));
 	System.out.println("Largest number is:: " + largest);
 	System.out.println("Smallest number is:: " + smallest);
-	
-	
-	
-	
-	
-		
-		
+
+				
 	}
 
 }
