@@ -25,19 +25,19 @@ public class SwapString {
 		
 		
 		
-		System.out.println(a);  //HelloWorld
+		System.out.println("The value of a after appending: " + a);  //HelloWorld
 		
 		
-		//2nd Step. Store initial string a in String b:
+		//2nd Step. Store initial string a in String b after deduction:
 		
-		b = a.substring(0, a.length()-b.length());        //.substring(starting Index, ending Index) Method
-		              //0, is critical or it will not work
+		b = a.substring(0, a.length()-b.length());  //.substring(starting Index, ending Index) Method
+		              //0, is critical or it will not work, 
 		//Substring "means" from exactly where you want to capture the substring, that's why H = 0, as is the 1st index of array..
 		
 		
-	   //Since a = HelloWorld is larger after line 21, so now - (deducting) b.length which is World (line 9) so after deduction now b = Hello
+	   //Since a = HelloWorld is larger after line 21, after - (deducting) b.length which is World, now value of A gets assigned to value of B so now B = Hello
 		
-		System.out.println(b); //Hello
+		System.out.println("The value of updated b: " + b); //Hello
 		
 		
 		System.out.println("*****************");
@@ -45,11 +45,11 @@ public class SwapString {
 		
 		//3rd Step: Store UPDATED String b in String a:
 		
-		a = a.substring(b.length());  //Substring has two parameters but we only need to pass one here, deleting the ending index.. 
-
+		a = a.substring(b.length());  //Substring has two parameters but we only need to pass one here, deleting the ending index pick just 1 index from the choice of methods
+		
 		//Because after the above swap, now b is Hello so this time b.length()); stores b in a = World
 
-		System.out.println("The value of a and b after swapping: ");
+		System.out.println("The value of a and b after swapping w/out 3rd variable: ");
 		
 		System.out.println("The value of a is: " + a);
 		System.out.println("The value of b is: " + b);
@@ -61,11 +61,12 @@ public class SwapString {
 		
 		//Here we are swapping with 3rd variable
 		
+		System.out.println("The value of c & d before swapping");
 		String c = "Hello";
 		String d = "World";
 		
-		System.out.println(c);
-		System.out.println(d);
+		System.out.println("Value of a: " + c);
+		System.out.println("Value of b: " + d);
 		
 		System.out.println("**************");
 		
@@ -77,9 +78,11 @@ public class SwapString {
 		c = d;  //Now c can takes the value of d
 		d = e; //d takes the value from e 
 		
-		System.out.println(c);
+		System.out.println("The value of c & d after swapping using 3rd variable");
 		
-		System.out.println(d);
+		System.out.println("Value of c: " + c);
+		
+		System.out.println("Value of d: " + d);
 	
 	}
 

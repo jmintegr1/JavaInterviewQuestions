@@ -31,13 +31,13 @@ public class DuplicateElements {           //****IQ: Which string is duplicate? 
 		
 		//Start w/ creating a Set Object
 		
-		Set<String> store = new HashSet<String>(); // = new HashSet<String>(); is a child class object which can be referred by parent Interface reference variable (of SET the parent) which is (stored) on the other side of =  |  
+		Set<String> store = new HashSet<String>(); // = new HashSet<String>(); is a child class object which can be referred by parent Interface reference variable (of SET the parent) which is (stored) on the other side of =    
 		
-		for(String value : names){ //Iterating this by using for loop, "VALUE" is given for simple variable name for the string.. nameS (with s) is an array from line 13 | Since HashSet is a class.. it is implementing SET Interface                                    
-		//Give a variable String name that will represent each element inside the array (values) : NAMES is the entire array from line 13
+		for(String value : names){ //Iterating this by using for loop, "VALUE" is given for simple variable name for EACH string inside []. nameS[] after : (with S) is the array from line 13 | Since HashSet is a class.. it is implementing SET Interface                                    
+		//Give a variable String name that will represent EACH element inside the array (values) : NAMES is the entire array from line 13
 			
-			if(store.add(value) == false){ //SET Object CANNOT store duplicate values (as soon as it is duplicate, it is FALSE. Since Java is already stored than it's false when iteration tries to store it  
-			//.add() is boolean so true or false, if it UNIQUE then it will be added, if false then we know which one is the Duplicate
+			if(store.add(value) == false){ //SET Object stores only unique values, it CANNOT store duplicate values (as soon as it is duplicate, it is FALSE. Since "Java" is already stored than it's false when iteration tries to store it  
+			//.add() method is BOOLEAN so true or false, if it's UNIQUE then it will be added, if false then we know which one is the Duplicate
 			
 				System.out.println("The duplicate element is:: " + value); //If condition picks out the false value (duplicate = Java) then give it to me & print it
 
@@ -73,8 +73,7 @@ public class DuplicateElements {           //****IQ: Which string is duplicate? 
 //				System.out.println("Duplicate element is: " + entry.getkey);
 //			}
 //		}
-		
-	 
+		 
 	}	
 
 }

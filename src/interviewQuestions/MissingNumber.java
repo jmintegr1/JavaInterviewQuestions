@@ -18,21 +18,21 @@ public class MissingNumber {
 		
 		int a[] = {1,2,4,5};   //Need to do boundary analysis so test with missing last# 10, or first #1, finally middle # like 6 or combo can be done as well
 		
-		int sum = 0; //Since adding we are using int SUM start w/ = 0 
+		int sum = 0; //Since adding integer from array, we are using "SUM" so start w/ = 0 as the starting point of []
 		
 		         //Array always start w/ Zero  
-		for(int i = 0; i<a.length; i++) { //.length function (size of array) & is how many time we'll do the increment, since array length is 4 so the loop increment 4x by adding each index value
+		for(int i = 0; i<a.length; i++) { //.length() function (size of array) & is how many time we'll do the increment, since array length is 4 so the loop will increment 4x by adding each of the index value
 			sum = sum + a[i]; //Sum should be 12 now
 		}
 		
 		System.out.println(sum);
 		
-		int sum1 = 0;  //Since adding we are using int SUM start w/ = 0
+		int sum1 = 0;  //Since adding we are using integer SUM start w/ = 0
 		
-		//When doing complete boundary addition then it is j<=
+		//When doing complete boundary addition then it is j<= largest # of the boundary
 		
 		//starting from 1 so j = 1
-		for(int j=1; j<=5; j++) {  //Here we have all the numbers totaled by having the biggest <= , then this includes the missing # in the total
+		for(int j=1; j<=5; j++) {  //Here we have all the numbers totaled by having the first # of the boundary and the largest# <=5 , so this includes the missing # in the total automatically
 			sum1 = sum1 + j;  //15
 		}
 		
@@ -40,7 +40,6 @@ public class MissingNumber {
 		
 		System.out.println("missing number is::: " + (sum1-sum));
 		
-
 		System.out.println("******************");
 		
 		
@@ -53,7 +52,7 @@ public class MissingNumber {
 		
 		int sum2 = 0; //Array always start w/ Zero  
 		
-		for(int n = 0; n<b.length; n++) { //.length function is how many time we'll do the increment, since array length is 1 so the loop increments by 10x
+		for(int n = 0; n<b.length; n++) { //.length function is how many time we'll do the increment, since array length is 1 so the loop increments by 10x & all the index
 			sum2 = sum2 + b[n]; //49
 		}   
 	                           
@@ -62,7 +61,7 @@ public class MissingNumber {
 		
 		int sum3= 0; 
 		//Starting from 1 so k = 1
-		for(int k=1; k<=10; k++) { //Here this loop adds Complete sequence 1,2,3,4,5,6,7,8,9,10 all the numbers that's why 1 compares to <=  10
+		for(int k=1; k<=10; k++) { //Here this loop adds Complete sequence 1,2,3,4,5,6,7,8,9,10 all the numbers that's why 1 compares to <= 10
 			sum3 = sum3 + k; //55
 		}
 		

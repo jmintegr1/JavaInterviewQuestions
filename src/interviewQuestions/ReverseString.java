@@ -8,7 +8,7 @@ public class ReverseString {        //IQ: Do we have reverse function in String?
 		
 		//1st way: Using for loop
 		 
-		int len = s.length(); //Get length of  the String so declare integer length variable w/ length() method
+		int len = s.length(); //Get length of the String so declare integer length variable w/ length() method
 		                       //8 is the length but we count as array, since S = 0 so the 7th location is m
 		
 		String rev = " "; //Define a blank variable here so rev is blank therefore it can store the reverse strings from the loop in line 18
@@ -32,7 +32,6 @@ public class ReverseString {        //IQ: Do we have reverse function in String?
 		//These two also works: instantiation inside PLS
 		
 		System.out.println(new StringBuffer(s).reverse());
-		
-		
+			
 	}
 }
