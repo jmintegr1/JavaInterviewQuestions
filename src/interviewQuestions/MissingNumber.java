@@ -12,7 +12,10 @@ public class MissingNumber {
 		
 		
 		//int a[] = {1,2,4,5},6,7,8,9...........100;  ***IQ Which # is missing from this big array? This time finding out the missing number will require more
+
 		//because the list of number is bigger and we don't want to manually count and check. We also want to do it by logic. 
+
+		
 		
 		//int a[] = {2,3,4,5,6,7,8,9,10}; //#s have to be in sequence then a missing #, so add all of them except the missing#
 		

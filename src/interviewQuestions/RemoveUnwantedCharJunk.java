@@ -7,7 +7,9 @@ public class RemoveUnwantedCharJunk {
 		//1st Declare string variable 
 		
 		String s = "!@#$%^&* latin string 1234567890";
+
 		String s1 = "@%#^ I love Selenium autmation testing !!#$%%^ as much as I love  *$#() manual testing )()&^ cuz that makes a complete SDET";
+
 		
 		//Ans: We use Regular Expression: [^a-zA-Z0-9] inside replaceAll()
 		
